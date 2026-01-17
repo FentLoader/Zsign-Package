@@ -1,0 +1,28 @@
+name: Makefile Build
+
+on:
+  push:
+    branches: [ "package" ]
+  pull_request:
+    branches: [ "package" ]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    
+    - uses: actions/checkout@v4
+
+    - name: Install dependencies
+      run: brew install pkg-config openssl minizip
+
+    - name: Build
+      run: cd build/macos && make clean && make
+      
+    - name: Upload build artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: Zsign Binary
+        path: ../../bin
