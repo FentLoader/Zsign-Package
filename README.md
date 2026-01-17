@@ -1,5 +1,5 @@
 It might be the quickest cross-platform codesign alternative for iOS 12+, supporting macOS, Linux, Windows, and more features.
-If this tool helps you, please don't forget to <font color=#FF0000 size=5>🌟**star**🌟</font> [ME](https://github.com/zhlynn).
+If this tool helps you, please don't forget to <font color=#FF0000 size=5>🌟**star**🌟</font> [zhlynn](https://github.com/zhlynn).
 
 ## Compile 
 
@@ -7,7 +7,7 @@ If this tool helps you, please don't forget to <font color=#FF0000 size=5>🌟**
 
 ```bash
 brew install pkg-config openssl minizip
-git clone https://github.com/zhlynn/zsign.git
+git clone https://github.com/FentLoader/Zsign-Package.git
 cd zsign/build/macos
 make clean && make
 ```
@@ -23,7 +23,7 @@ brew install ideviceinstaller
 
 ```bash
 sudo apt-get install -y git g++ pkg-config libssl-dev libminizip-dev
-git clone https://github.com/zhlynn/zsign.git
+git clone https://github.com/FentLoader/Zsign-Package.git
 cd zsign/build/linux
 make clean && make
 ```
@@ -50,7 +50,7 @@ sudo rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-9.noarch
 Then, install the dependencies and compile:
 ```bash
 sudo yum install -y git gcc-c++ pkg-config openssl-devel minizip1.2-devel
-git clone https://github.com/zhlynn/zsign.git
+git clone https://github.com/FentLoader/Zsign-Package.git
 cd zsign/build/linux
 make clean && make
 ```
