@@ -19,7 +19,7 @@ public:
 					bool bForce,
 					bool bWeakInject,
 					bool bEnableCache,
-					bool excludeProvisioning);
+					bool excludeProvisioning = false);
 
 private:
 	bool SignNode(jvalue& jvNode);
