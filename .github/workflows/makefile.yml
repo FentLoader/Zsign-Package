@@ -19,7 +19,7 @@ jobs:
       run: brew install minizip
 
     - name: Build
-      run: cd build/macos && make clean && make
+      run: cd build/macos && make
       
     - name: Upload build artifact
       uses: actions/upload-artifact@v4
