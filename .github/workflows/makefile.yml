@@ -7,7 +7,7 @@ on:
     branches: [ "package" ]
 
 jobs:
-  build:
+  Build:
     runs-on: macos-latest
 
     steps:
@@ -16,7 +16,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Install dependencies
-      run: brew install pkg-config openssl minizip
+      run: brew install minizip
 
     - name: Build
       run: cd build/macos && make clean && make
