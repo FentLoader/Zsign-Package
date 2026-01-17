@@ -25,4 +25,4 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: Zsign Binary
-        path: ../../bin
+        path: bin
